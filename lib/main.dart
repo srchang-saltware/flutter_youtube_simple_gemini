@@ -18,7 +18,7 @@ class GenerativeAiSample extends StatelessWidget {
     print(apiKey);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'MyChatbot',
+      title: 'MyChatBot',
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
@@ -26,7 +26,7 @@ class GenerativeAiSample extends StatelessWidget {
           seedColor: const Color.fromARGB(255, 171, 222, 244),
         ),
       ),
-      home: ChatScreen(apiKey: apiKey, title: 'Gemini AI'),
+      home: ChatScreen(apiKey: apiKey, title: 'Gemini Ai'),
     );
   }
 }

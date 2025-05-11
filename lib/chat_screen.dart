@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_youtube_simple_gemini/widget/chat_widget.dart';
 
 class ChatScreen extends StatefulWidget {
   final String title;
@@ -12,6 +13,15 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          widget.title,
+        ),
+      ),
+      body: ChatWidget(
+        apiKey: widget.apiKey,
+      ),
+    );
   }
 }
